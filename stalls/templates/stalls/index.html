@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>stalls</title>
+</head>
+<body>
+{% if latest_stalls_list %}
+    <ul>
+    {% for stall in latest_stalls_list %}
+        <li><a href="/stalls/{{ stall.id }}/">{{ stall.stall_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No stalls are available.</p>
+{% endif %}
+
+</body>
+</html>
