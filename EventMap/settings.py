@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'stalls.apps.StallsConfig',
+    'stalls',
+    #'stalls.apps.StallsConfig',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'EventMap.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'stalls/templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,9 +78,9 @@ WSGI_APPLICATION = 'EventMap.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'EventMapStallsDB',
-        'USER': 'festember',
-        'PASSWORD': 'festember',
+        'NAME': 'phpmyadmin',
+        'USER': 'root',
+        'PASSWORD': 'sabr1996',
         'HOST' : '127.0.0.1',
         'PORT' : '',
     }

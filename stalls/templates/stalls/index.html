@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>stalls</title>
+	<title>Stalls | Festember</title>
 </head>
 <body>
-{% if latest_stalls_list %}
+{% if list %}
     <ul>
-    {% for stall in latest_stalls_list %}
-        <li><a href="/stalls/{{ stall.id }}/">{{ stall.stall_name }}</a></li>
+    {% for stall in list %}
+        <li>
+        	<a href="/stalls/{{ stall.slug }}/">{{ stall.stallName }}</a>
+        	<br>
+        	<p>{{ stall.stallDescription }}</p>
+        	<br>
+        	<p>{{ stall.stallLocation }}</p>
+        </li>
     {% endfor %}
     </ul>
 {% else %}
