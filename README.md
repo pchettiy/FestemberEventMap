@@ -9,9 +9,10 @@
 - [ ] API for updation of event status 
 - [ ] Creating basic form for the above
 
+
 <h2>Stalls</h2>
-- [ ] Define Model
-- [ ] API to list all food stalls
+- [x] Define Model
+- [X] API to list all food stalls
 - [x] Creating a basic template for the above
  
 <h3>Build Instructions</h3>

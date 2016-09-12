@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'EventMap.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'phpmyadmin',
-        'USER': 'root',
-        'PASSWORD': 'sabr1996',
+        'NAME': 'EventMapStallsDB',
+        'USER': 'festember',
+        'PASSWORD': 'festember',
         'HOST' : '127.0.0.1',
         'PORT' : '',
     }

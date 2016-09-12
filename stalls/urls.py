@@ -14,6 +14,7 @@ urlpatterns = [
     # ex: /stalls
     url(r'^$', views.index, name='index'),
     
+   #	url(r'^create/',views.createStall,name='create'),
 
 
     # ex: /polls/5/results/
