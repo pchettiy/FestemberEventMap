@@ -10,7 +10,7 @@ urlpatterns = [
 urlpatterns = [
     
     # ex: /stalls/5
-    url(r'^(?P<stallId>\S+)$', views.detail, name='detail'),    
+    url(r'^(?P<sid>\S+)$', views.detail, name='detail'),    
     # ex: /stalls
     url(r'^$', views.index, name='index'),
     
