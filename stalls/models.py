@@ -5,7 +5,6 @@ from django.core.urlresolvers import reverse
 
 class Stall(models.Model):   
     stallId = models.IntegerField(primary_key = True)
-    #slug = models.SlugField(max_length = 20 , unique = True, default = '0')
     stallName = models.CharField(max_length=100, default = 'Not Available')
     stallDescription = models.CharField(max_length=250, default = 'Not Available')
     stallLocation = models.CharField(max_length=100, default = 'Not Available')
