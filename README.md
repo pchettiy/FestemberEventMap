@@ -4,9 +4,9 @@
 
 <h2>Events</h2>
 - [ ] Define Model
-- [ ] API to list all events
+- [x] API to list all events
 - [ ] API to load event pics 
-- [ ] API for updation of event status 
+- [ ] API for updation of event time 
 - [ ] Creating basic form for the above
 
 
