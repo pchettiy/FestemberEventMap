@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events | Festember</title>
+</head>
+<body>
+{% if list %}
+    <ul>
+    {% for event in list %}
+        <li>
+        	<a href="/events/{{ event.id }}/">{{ event.eventName }}</a>
+            <br>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No events are available.</p>
+{% endif %}
+
+</body>
+</html>

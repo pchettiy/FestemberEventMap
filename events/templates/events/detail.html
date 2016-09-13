@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ event.eventName }}</title>
+</head>
+<body>
+<h1>{{ event.eventLocation}}</h1>
+<br>
+<p>{{ event.eventDescription }}</p>
+<br>
+<p>{{ event.eventTime }}&nbsp;&nbsp;&nbsp;{{ event.eventStatus }}&nbsp;<a href="/events/updatestatus/{{ event.id }}">Update Status</a></p>
+</body>
+</html>

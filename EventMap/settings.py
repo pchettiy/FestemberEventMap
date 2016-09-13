@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'stalls',
-    #'stalls.apps.StallsConfig',
+    'events',
 ]
 
 MIDDLEWARE = [
